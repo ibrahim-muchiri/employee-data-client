@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 300px; */
+  background-color: aquamarine;
+  
+}
+.information input {
+  /* width: 300px; */
+  height: 50px;
+
+}
+button {
+  background-color: brown;
+  margin: 10px;
+  width: 150px
+}
+button:hover {
+  background-color: yellow;
+}
+
+.employees {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.employee {
+  width: 700px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.employee h3 {
+  margin: 5px;
+
+}
+
+.search input{
+  display: flex;
+  font-style: italic;
+  justify-content: flex-end; 
+  /* margin-right:50px; */
+}
+
+h3 button{  
+  width: 50px;
+  margin: 10px;  
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  background-color: aquamarine;
+  text-align: center;
+  width: 50%;
+  
+}
