@@ -31,6 +31,7 @@ useEffect(() =>{
     <div>
      <div className='information'>
         <h2>Update Data</h2>
+        <h2>wage:</h2>
       {/* <label>Name:</label> */}
        {/* <input type='text' onChange={(e) => {setName(e.target.value)}} /> */}
         {/* <label>Age:</label> */}

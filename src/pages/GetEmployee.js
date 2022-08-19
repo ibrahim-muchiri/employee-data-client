@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react'
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
+import { FcSearch } from 'react-icons/fc';
 
 function GetEmployee() {
     const [employeeList, setEmployeeList] = useState([]);
     const [search, setSearch] = useState('');
     const [filteredData, setFilteredData] = useState([]);    
+
+    
 
  //Getting the employeee
 const getEmployees = () => {
@@ -30,12 +33,23 @@ const getEmployees = () => {
 
 
   return (
- <div>
-
-    <div className='search input'><input type='text' placeholder='search...' onChange={((e)=>{setSearch(e.target.value)})}/></div> 
+   <div>
+   <div className='search'>
+    <div className='search-input'>
+      <input type='text' placeholder='search...'
+    onChange={((e)=>{setSearch(e.target.value)})} />
+    <div className='searchIcon'> <FcSearch /> </div>
+    </div>
+    </div>
+   
+   {/* Getting data from the database */}
      <div className='employees'>
+      <div>
   <button onClick={getEmployees}>Emplloyees list</button>
+  <Link to='/AddEmployee'>Back</Link>
+  </div>
 
+{/* Posting Data to the database */}
      {filteredData.map((val, key) => {
   return (<div className='employee' key={val.id}>     
   <h3>Name: {val.name}</h3>
