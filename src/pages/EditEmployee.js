@@ -14,7 +14,7 @@ function EditEmployee() {
     const [newWage, setNewWage] = useState('');
 
 const updateHandler = async() =>{
-    const data = {  
+    const data = {
         // id: id,
         wage: newWage
     }

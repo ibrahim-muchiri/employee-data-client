@@ -46,7 +46,7 @@ const getEmployees = () => {
      <div className='employees'>
       <div>
   <button onClick={getEmployees}>Emplloyees list</button>
-  <Link to='/AddEmployee'>Back</Link>
+  <Link to='/'>Back</Link>
   </div>
 
 {/* Posting Data to the database */}

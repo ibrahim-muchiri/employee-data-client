@@ -1,5 +1,5 @@
 import React from 'react'
-import AddEmployee from './pages/AddEmployee';
+import {AddEmployee} from './pages/AddEmployee';
 import GetEmployee from './pages/GetEmployee';
 import EditEmployee from './pages/EditEmployee';
 import {
@@ -17,7 +17,7 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route exact path='/AddEmployee' element={<AddEmployee />}/>
+          <Route exact path='/' element={<AddEmployee />}/>
           <Route exact path='/GetEmployee' element={<GetEmployee />}/>
           <Route exact path='/EditEmployee' element={<EditEmployee />}/>
         </Routes>
